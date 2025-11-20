@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 30px;
+  padding: 40px;
+  border-radius: 25px;
+  width: 750px;
+}
+img {
+  width: 100%;
+  border-radius: 25px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Young Serif";
+  color: hsl(24, 5%, 18%);
+}
+p,
+li,
+td {
+  font-family: "Outfit";
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+}
+.preparation {
+  display: grid;
+  row-gap: 15px;
+  background-color: hsl(330, 100%, 98%);
+  padding: 30px;
+}
+h3 {
+  font-family: "Outfit";
+  color: hsl(332, 51%, 32%);
+}
+li {
+  margin-left: 30px;
+  padding: 10px;
+}
+h2 {
+  font-family: "Young Serif";
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+.ingredients {
+  display: grid;
+  row-gap: 15px;
+}
+ul li::marker,
+ol li::marker {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+table {
+  border-collapse: collapse;
+}
+table td {
+  b {
+    color: hsl(14, 45%, 36%);
+  }
+  text-align: left;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 15px;
+}
