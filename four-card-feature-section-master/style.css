@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins";
+  background-color: hsl(0, 0%, 100%);
+}
+.text {
+  width: 34.3rem;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 4rem;
+  h1 {
+    color: hsl(212, 6%, 44%);
+    font-weight: 200;
+  }
+  .mid {
+    color: hsl(234, 12%, 34%);
+    font-weight: 700;
+  }
+  p {
+    color: hsl(212, 6%, 44%);
+    font-weight: 400;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  gap: 30px;
+  text-align: left;
+}
+
+.supervisor {
+  grid-row: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 6px solid hsl(180, 62%, 55%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+}
+.team-builder {
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 6px solid hsl(0, 78%, 62%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+}
+.karma {
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 6px solid hsl(34, 97%, 64%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  height: 300px;
+  width: 400px;
+  padding: 20px;
+}
+
+.calculator {
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 6px solid hsl(212, 86%, 64%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+}
+@media (max-width: 375px) {
+  body {
+    width: fit-content;
+  }
+  .text {
+    text-align: center;
+    width: 300px;
+    font-size: 12px;
+    p {
+      font-size: 14px;
+    }
+  }
+  .container {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
