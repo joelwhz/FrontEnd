@@ -100,24 +100,19 @@ body {
   height: 300px;
   padding: 20px;
 }
-@media (max-width: 375px) {
+@media (max-width: 1440px) {
   body {
-    width: fit-content;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
   }
   .text {
-    text-align: center;
-    width: 300px;
-    font-size: 12px;
-    p {
-      font-size: 14px;
-    }
+    width: 100%;
   }
   .container {
-    width: auto;
-    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     flex-direction: column;
+    height: 100vh;
   }
 }
