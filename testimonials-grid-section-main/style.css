@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Barlow Semi Condensed";
+  background-color: hsl(0, 0%, 81%);
+  padding: 20px;
+}
+.container {
+  width: fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  width: 1400px;
+}
+.container > div {
+  border-radius: 15px;
+}
+.g1 {
+  grid-column: span 2;
+  z-index: -1;
+  width: fit-content;
+  padding: 25px;
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+  h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .arriba {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nombre {
+      h3 {
+        text-align: left;
+        font-weight: 500;
+        position: relative;
+        right: 130px;
+      }
+    }
+    .logo {
+      position: relative;
+      right: 35px;
+      border: 3px solid hsl(264, 82%, 80%);
+      border-radius: 50%;
+    }
+    .quote {
+      position: relative;
+      bottom: -10px;
+      width: 130px;
+      height: 130px;
+      z-index: -1;
+    }
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+
+.g2 {
+  grid-column-start: 3;
+  padding: 25px;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 96%);
+  .arriba {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nombre {
+      h3 {
+        text-align: center;
+        font-weight: 500;
+        position: relative;
+        right: 50px;
+      }
+    }
+    .logo {
+      position: relative;
+      right: 12px;
+      border: 3px solid hsl(0, 0%, 81%);
+      border-radius: 50%;
+    }
+  }
+  h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+
+.g3 {
+  grid-row-start: 2;
+  grid-column: span 2;
+  padding: 25px;
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+  .arriba {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nombre {
+      h3 {
+        text-align: center;
+        font-weight: 500;
+        position: relative;
+        right: 300px;
+      }
+    }
+    .logo {
+      position: relative;
+      right: 100px;
+      border: 3px solid hsl(264, 82%, 80%);
+      border-radius: 50%;
+    }
+  }
+  h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+.g4 {
+  grid-column-start: 4;
+  grid-row: span 2;
+  padding: 30px;
+  background-color: hsl(214, 17%, 92%);
+  color: hsl(217, 19%, 35%);
+  .arriba {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nombre {
+      h3 {
+        text-align: left;
+        font-weight: 500;
+        position: relative;
+        right: 45px;
+      }
+    }
+    .logo {
+      position: relative;
+      right: 10px;
+      border-radius: 50%;
+    }
+  }
+  h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+.g5 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  padding: 30px;
+  background-color: hsl(214, 17%, 92%);
+  color: hsl(217, 19%, 35%);
+  .arriba {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nombre {
+      h3 {
+        text-align: left;
+        font-weight: 500;
+        position: relative;
+        right: 45px;
+      }
+    }
+    .logo {
+      position: relative;
+      right: 10px;
+      border-radius: 50%;
+    }
+  }
+  h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+@media (max-width: 1440px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .g3 .arriba {
+    .nombre {
+      h3 {
+        text-align: left;
+        font-weight: 500;
+        position: relative;
+        right: 40px;
+      }
+    }
+    .logo {
+      position: relative;
+      right: 0px;
+      border-radius: 50%;
+    }
+  }
+  .g1 .arriba {
+    .nombre {
+      h3 {
+        text-align: left;
+        font-weight: 500;
+        position: relative;
+        left: 45px;
+      }
+    }
+    .logo {
+      position: relative;
+      left: 20px;
+      border-radius: 50%;
+    }
+  }
+}
