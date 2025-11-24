@@ -50,6 +50,7 @@ span {
   column-gap: 20px;
   align-items: center;
   padding: 3px;
+  position: relative;
 }
 .logo {
   width: 32px;
@@ -63,6 +64,53 @@ span {
   border: transparent;
   margin-left: auto;
   cursor: pointer;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+#share.active {
+  background-color: hsl(214, 17%, 51%);
+}
+
+#share.active img {
+  filter: brightness(0) invert(1);
+}
+
+.share-icons {
+  display: none;
+  position: absolute;
+  background-color: hsl(217, 19%, 35%);
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+
+.share-icons.active {
+  display: flex;
+}
+
+.share-text {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: hsl(214, 17%, 51%);
+  text-transform: uppercase;
+}
+
+.share-icon {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.share-icon:hover {
+  color: hsl(214, 17%, 51%);
 }
 @media (max-width: 1440px) {
   .container {
