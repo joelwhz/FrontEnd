@@ -40,7 +40,7 @@ shareBtn.addEventListener("click", (e) => {
       footer.appendChild(shareContainer);
     }
   }
-  if (window.innerWidth <= 853) {
+  if (window.innerWidth <= 360) {
     shareContainer.parentNode.removeChild(shareContainer);
   }
 });
