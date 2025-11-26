@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const shareBtn = document.getElementById("share");
 const footer = document.getElementById("footer");
 
@@ -43,3 +44,32 @@ shareBtn.addEventListener("click", (e) => {
     }
   }
 });
+=======
+const shareBtn = document.querySelector("#share");
+const footer = document.querySelector("#footer");
+
+// Create share icons container
+const shareContainer = document.createElement("div");
+shareContainer.style.marginBottom = "100px"
+shareContainer.style.width = "100%"
+shareContainer.className = "share-icons";
+shareContainer.innerHTML = `
+  <span class="share-text">SHARE</span>
+  <img src="images/icon-facebook.svg" alt="">
+  <img src="images/icon-pinterest.svg" alt="">
+  <img src="images/icon-share.svg" alt="">
+  <a href = 'https://twitter.com' > <img src="images/icon-twitter.svg" alt=""></a>
+`;
+
+// Toggle share icons on button click
+shareBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  shareContainer.classList.toggle("active");
+  shareBtn.classList.toggle("active");
+  
+  // If showing, append to footer; if hiding, we keep it in DOM but hide with CSS
+  if (shareContainer.classList.contains("active") && !shareContainer.parentElement) {
+    footer.appendChild(shareContainer);
+  }
+});
+>>>>>>> d1f778e2977a1a7913db5c7aaf19f549c1623733
