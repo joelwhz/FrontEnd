@@ -27,6 +27,7 @@ shareContainer.innerHTML = `
 `;
 
 shareContainer.style.display = "none";
+
 shareBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
