@@ -13,6 +13,7 @@
     rel="stylesheet">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -30,15 +31,22 @@
       <span>Email address</span>
       <form action="" id="form" class="form">
         <input type="email" name="email" id="email" placeholder="email@company.com">
+        <button type="submit" id="submit">Subscribe to monthly newsletter
+        </button>
       </form>
-      <button type="submit">Subscribe to monthly newsletter
-      </button>
+
     </div>
     <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
-
   </div>
 
+  <div class="success-message" style="display: none;">
+    <img src="assets/images/icon-success.svg" alt="">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <span class="success-email"></span>.
+      Please open it and click the button inside to confirm your subscription.</p>
+    <button id="cerrarMensaje">Dismiss message</button>
 
+  </div>
 
 
 </body>

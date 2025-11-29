@@ -115,6 +115,7 @@ span {
 .share-icons {
   display: none; /* Inicialmente oculto */
 }
+
 @media (max-width: 800px) {
   .container {
     margin: 15px;
